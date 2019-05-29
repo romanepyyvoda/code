@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="Dandy Brewing Company" content="Dandy Brewing Company">
+        <title>Dandy Brewing Company</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/beer_styles.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:500,700,800%7CEncode+Sans+Semi+Expanded:400,500,700" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        
+        <link rel="shortcut icon" type="image/x-icon" href="images/Dandy_Brewing_Octopus.png" />
+        
+        <script src="javascript/dandy.js"></script>
+        
+    </head>
+    
+<body id="modal-open" style="overflow: hidden">
+    
+    
+    <main>
+        
+       
+        
+       <header id="site_header">
+    
+        <div>
+        <nav>
+        <ul>
+            <li><a href="#1" title="About Us" onclick="showNhide('beer1', 'hiddenContent1', 'hiddenContent1B')">About Us</a></li>
+            <li><a href="#2" title="Beers" onclick="showNhide('beer2', 'hiddenContent2', 'hiddenContent2B')">Beers</a></li>
+            <li><a href="#3" title="The tasting room" onclick="showNhide('beer3', 'hiddenContent3', 'hiddenContent3B')">The Tasting Room</a></li>
+            <li><a href="#4" title="Where to find us" onclick="showNhide('beer4', 'hiddenContent4', 'hiddenContent4B')">Where to find us</a></li>
+            <li><a href="#5" title="Artist in Residence" onclick="showNhide('beer5', 'hiddenContent5', 'hiddenContent5B')">Artist in Residence</a></li>
+            <li><a href="#6" title="Story" onclick="showNhide('beer6', 'hiddenContent6', 'hiddenContent6B')">Story</a></li>
+            <li><a href="#7" title="Contact Us" onclick="showNhide('beer7', 'hiddenContent7', 'hiddenContent7B')">Contact Us</a></li>
+        </ul>
+        </nav>
+        </div>
+           
+      </header>
+        
+        
+    
+
+    <article id="main_content" class="full-width-main">
+        
+        <div id="bg-modal" style="display: flex">
+            <div class="modal-content">
+                
+                <div class="modal-background">
+                    
+                   <h2>PLEASE ENTER YOUR<br>DATE OF BIRTH</h2>
+                    <p>*You have to be of legal age to access this site*</p>
+                    
+                    <div id="errorBox"></div>
+    <div id="age-form">            
+        <form name="form">
+    
+     <!--birthday details start-->
+      
+      <div>
+        <select name="birthday_month" >
+          <option value="" selected >Month</option>
+          <option value="1">Jan</option>
+          <option value="2">Feb</option>
+          <option value="3">Mar</option>
+          <option value="4">Apr</option>
+          <option value="5">May</option>
+          <option value="6">Jun</option>
+          <option value="7">Jul</option>
+          <option value="8">Aug</option>
+          <option value="9">Sep</option>
+          <option value="10">Oct</option>
+          <option value="11">Nov</option>
+          <option value="12">Dec</option>
+        </select>
+        &nbsp;&nbsp;
+        <select name="birthday_day" >
+          <option value="" selected>Day</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+        &nbsp;&nbsp;
+        <select name="birthday_year">
+          <option value="" selected>Year</option>
+          <option value="2027">2027</option>
+          <option value="2026">2026</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option>
+          <option value="2009">2009</option>
+          <option value="2008">2008</option>
+          <option value="2007">2007</option>
+          <option value="2006">2006</option>
+          <option value="2005">2005</option>
+          <option value="2004">2004</option>
+          <option value="2003">2003</option>
+          <option value="2002">2002</option>
+          <option value="2001">2001</option>
+          <option value="2000">2000</option>
+          <option value="1999">1999</option>
+          <option value="1998">1998</option>
+          <option value="1997">1997</option>
+          <option value="1996">1996</option>
+          <option value="1995">1995</option>
+          <option value="1994">1994</option>
+          <option value="1993">1993</option>
+          <option value="1992">1992</option>
+          <option value="1991">1991</option>
+          <option value="1990">1990</option>
+          <option value="1989">1989</option>
+          <option value="1988">1988</option>
+          <option value="1987">1987</option>
+          <option value="1986">1986</option>
+          <option value="1985">1985</option>
+          <option value="1984">1984</option>
+          <option value="1983">1983</option>
+          <option value="1982">1982</option>
+          <option value="1981">1981</option>
+          <option value="1980">1980</option>
+          <option value="1979">1979</option>
+          <option value="1978">1978</option>
+          <option value="1977">1977</option>
+          <option value="1976">1976</option>
+          <option value="1975">1975</option>
+          <option value="1974">1974</option>
+          <option value="1973">1973</option>
+          <option value="1972">1972</option>
+          <option value="1971">1971</option>
+          <option value="1970">1970</option>
+          <option value="1969">1969</option>
+          <option value="1968">1968</option>
+          <option value="1967">1967</option>
+          <option value="1966">1966</option>
+          <option value="1965">1965</option>
+          <option value="1964">1964</option>
+          <option value="1963">1963</option>
+          <option value="1962">1962</option>
+          <option value="1961">1961</option>
+          <option value="1960">1960</option>
+          <option value="1959">1959</option>
+          <option value="1958">1958</option>
+          <option value="1957">1957</option>
+          <option value="1956">1956</option>
+          <option value="1955">1955</option>
+          <option value="1954">1954</option>
+          <option value="1953">1953</option>
+          <option value="1952">1952</option>
+          <option value="1951">1951</option>
+          <option value="1950">1950</option>
+
+        </select>
+      </div>
+      <!--birthday details ends-->
+      
+       
+     </form>
+    </div>
+    <!--form ends--> 
+    <div id="sign-in-button">
+        <button type="button"  onclick="Submit()">Submit</button>
+    </div>
+                    
+                    
+                </div>
+                <div>
+      
+      
+    </div>
+                
+                 
+            </div>
+        </div>
+        
+        <div class="wrap-main">
+            
+        <div id="octopus">
+            
+            <p><a href="#site_header" title="About Us"><img id="rotateOctopus" src="images/Dandy_Brewing_Octopus.png" alt="octopus" height="150px"><br>Click on me<br>and I'll<br>take you home</a></p>
+        </div>
+            
+          
+        <section>
+            
+            <h2 id="1" onclick="showNhide('beer1', 'hiddenContent1', 'hiddenContent1B')"><span  id="beer1" class="fas fa-beer"></span> About Us</h2>
+            
+            <div id="hiddenContent1B" class="hiddenContent" style="display: none">
+            </div>
+            
+            <div id="hiddenContent1" class="hiddenContent" style="display: none">
+            
+                <p>The Dandy Brewing Company is Calgary's original small brewery. Although it has grown a little, it's still small at heart. We produce inspired ales, with lots of care, in small batches.</p>
+                <p>Our unique approach to brewing and keen eye to every detail and fosters creativity in both our recipes and beer styles.</p>
+                <p>On site, we are pleased to offer a unique brewery experience, featuring a full service tasting room with an exquisite menu of fine dining drinking food, a curated selection of cocktails, glass pours of selected wines, and 20 taps of Dandy beers.</p>
+                <p>We share a passion for not only brewing, but the people, process, experiences, and personal touches that make the real ale experience so special.</p>
+            
+            </div>
+            
+        </section>
+        
+        <section>
+            
+            <h2 id="2" onclick="showNhide('beer2', 'hiddenContent2', 'hiddenContent2B')"><span  id="beer2" class="fas fa-beer"></span> Beers</h2>
+            
+            <div id="hiddenContent2B" class="hiddenContent" style="display: block">
+                <p>Dandy in the Underworld 5.5% ABV &nbsp;&nbsp;&nbsp;Une Vieille Maitresse 4.5% ABV</p>
+                <p>The Dandy Wild Sour Ale 7.3% ABV&nbsp;&nbsp;&nbsp;The Golden Brown Dandy 6% ABV</p>    
+            </div>
+                        
+            <div id="hiddenContent2" class="hiddenContent" style="display: none">
+            
+            <h3>The Dandy Line Up</h3>
+            
+                <p>The full Dandy line up of beers. Made in small batches, available province-wide.</p>
+             
+
+            
+            <h4>Dandy in the Underworld</h4>
+            
+            
+                <p class="parag1">5.5% ABV</p>
+                <p>The main Dandy. This beer is our most popular offering and available everywhere, all the time. A light body with notes of coffee, chocolate, and light roast, this traditional Oyster Stout is sure to be a favourite.</p> 
+                <p>Pairs well with oysters, fish, and other salty snacks!</p>
+            
+            <h4>Une Vieille Maitresse</h4>
+            
+                <p class="parag1">4.5% ABV</p>
+                <p>This farmhouse ale is available year round in the bottle and draught. A table strength beer brewed with rye and french saison yeast. It is light, refreshing, with a touch of spice and saison character. Brewed once as a limited edition, we can't seem to shake this old mistress.</p>
+        
+            <h4>The Dandy Wild Sour Ale</h4>
+            
+                <p class="parag1">7.3%</p>
+                <p>A bold, malty sour ale soured with lactobacillus and fermented with a wild yeast strain. An upfront sourness is balanced with wild yeast character for a rich sour experience.</p>
+        
+            <h4>The Golden Brown Dandy</h4>
+            
+                <p class="parag1">6% ABV</p>
+                <p>Our English Pale ale. This beer is a low-carbonation ode to real-ale. A smooth malt body is balanced with a highly intensive hops schedule to bring forward a great tasting beer to reward all ale lovers! Available only in bottles and casks.</p>
+                <p>Pairs well with meats, rich sauces and hard, aged  cheeses</p>
+        
+            <h3>Seasonal Releases</h3>
+            
+                <p>Four exciting beers a year with wide release. Look for them when the weather begins to turn.</p>
+    
+            <h4>Baltus van Tassel: Cherry Sour</h4>
+            
+                <p class="parag1">7% ABV</p>
+                <p class="parag2"><em>Fall</em></p>
+                <p>An American Style Cherry Sour.  A rich brown American Brown sour brewed with Sweet and Tart cherries for the perfect accompaniment to shorter days and colder weather.</p>
+        
+            <h4>In the Bleak Midwinter: Black IPA</h4>
+            
+                <p class="parag1">6.5% ABV</p>
+                <p class="parag2"><em>Winter</em></p>
+                <p>A fruity Black IPA. With only a kiss of roast, this black IPA is fresh and juicy but dark as the coldest days of winter. Citra and Mosaic are late hop additions to avoid the bitterness and focus on aroma.</p>
+        
+            <h4>The Jungle Bird: Tropical Dark Sour</h4>
+            
+                <p class="parag1">5% ABV</p>
+                <p class="parag2"><em>Spring</em></p>
+                <p>An homage to the classic Tiki cocktail. This beer has notes of demerara sugar, bitter lime, tropical pineapple coming together for a refreshing sour that is like no other. </p>
+        
+            <h4>Bright Young Things: Hopped Wheat Ale</h4>
+            
+                <p class="parag1">5.5% ABV</p>
+                <p class="parag2"><em>Summer</em></p>
+                <p>English Summer Ale. A style developed during a late 70’s heat wave in England, this beer is designed to refresh in the hot summer sun. Dry, with a touch of wheat and toasted Victory malt, it is balanced with a touch of bitterness and a sweet citrus aroma. Patios, BBQ’s, and friends all pair perfectly with this beer!</p>
+            </div>
+        </section>
+        
+        <section>
+            
+            
+            <h2 id="3" onclick="showNhide('beer3', 'hiddenContent3', 'hiddenContent3B')"><span  id="beer3" class="fas fa-beer"></span> The Tasting Room</h2>
+            
+            <div id="hiddenContent3B" class="hiddenContent" style="display: block">
+                <p>The Dandy Brewing Company and Tasting Room is a unique experience located in the heart of Ramsay featuring local spirit, a daily selection of top quality wines available by the glass.</p>    
+            </div>
+            
+            <div id="hiddenContent3" class="hiddenContent" style="display: none">
+            <section>
+                <p>Serving 20 taps of exceptional craft beer, fine drinking food, cocktails and wine.</p>
+        
+            <h3>What We Do</h3>
+            
+                <p>The Dandy Brewing Company and Tasting Room is a unique experience located in the heart of Ramsay. The modern space features 20 taps of Dandy Beers <em>(maybe a few rad guest taps)</em>, a curated cocktail list featuring local spirit, a daily selection of top quality wines available by the glass.</p>
+                <p>Making the experience even better is a menu of drinking food, rooted in the fine dining. Chef Merritt Gordon has put together something amazing, enhancing the already indulgent experience.</p>
+                <p>Open Daily for lunch and dinner service, as well as brunch on weekends.</p>
+        
+            <h3>More information</h3>
+            
+                <p class="parag1"><em>Hours. Snacks. Tours.</em></p>
+
+            <h3>Tasting Room Hours</h3>
+            
+                <table class="table">
+                    <tr>
+                        <td>Monday:</td> 
+                        <td><strong>Closed</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday:</td> 
+                        <td>11:30am-10pm</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday:</td>
+                        <td>11:30am-10pm</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday:</td>
+                        <td>11:30am-10pm</td>
+                    </tr>
+                    <tr>
+                        <td>Friday:</td>
+                        <td>11:30am-Midnight</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday:</td>
+                        <td>10am-Midnight</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday:</td>
+                        <td>10am-8pm</td>
+                    </tr>
+                </table>
+            
+                        <p><em>Please note:</em> Due to AGLC regulations, we are not able to fill growlers or provide offsales at this time.</p>
+            
+        </section>
+        
+        <section>
+            
+            <h3>Restaurant</h3>
+            
+                <p>Offering a full lunch, dinner and brunch menu, the Tasting Room brings a unique drinking  menu to the craft beer experience.</p>
+                <p>With snacks, plates, desserts, and a fresh oyster bar, the menu is meant to be shared among friends and lovers. Always evolving, the menu is perfectly paired with all things Dandy.</p>
+                <p>Vegetarian and Vegan options available. Please ask your server. </p>
+                <p>Open for Lunch, Dinner, and Brunch.</p>
+            
+        
+            
+        
+        
+        
+            
+            <h3>Shop</h3>
+            
+                <p>Dandy is pleased to offer a small offering of merchandise.</p>
+                <p>Along with  T-Shirts and hats, we are pleased to offer numbered silk screen prints, designed by Artists we are so pleased to call friends, and printed by the team at Burnt Toast Studios. </p>
+                <p>We are also excited to announce a collaborative with North American Quality Purveyors on a line of T-shirts and baseball caps. We worked together to design custom cut shirts and hats, that fit a Dandy perfectly.</p>
+            
+        </section>
+            </div>
+        </section>
+        
+        <section>
+            
+            <h2 id="4" onclick="showNhide('beer4', 'hiddenContent4', 'hiddenContent4B')"><span  id="beer4" class="fas fa-beer"></span> Where to find us</h2>
+            
+            <div id="hiddenContent4B" class="hiddenContent" style="display: block">
+                <p>Stores. On Tap. Restaurants. Bars With Bottles. </p>    
+            </div>
+            
+            <div id="hiddenContent4" class="hiddenContent" style="display: none">
+            
+                <p>Looking to pick up a bottle or pint?
+                Below you will find a list of Calgary establishments carrying Dandy beers. You can check out 
+                <a id="section_link"  href="http://www.liquorconnect.com" title="Liquor Connect">www.liquorconnect.com</a> to find all retail accounts carrying our beers across the province.</p>
+        
+
+          <h3>Stores</h3>
+        <div class="columns">
+                      
+        <div class="div_content">
+            
+            <h4>NW</h4>
+            
+                <ul>
+                    <li>Kensington Wine Market</li>
+                    <li>Oak and Vine</li>
+                    <li>Brentwood Liquor Depot</li>
+                    <li>Vine Styles: Kensington</li> 
+                    <li>Silver Springs Liquor</li>
+                    <li>Highlander Liquor North Hill</li>
+                    <li>Kensington Liquor Cellar</li>
+                    <li>Point McKay Winestore <i>(Growler bar)</i></li>
+                </ul>
+        </div>
+            
+        <div class="div_content">
+            <h4>NE</h4>
+            
+                    <ul>
+                    <li>Craft Cellars</li>
+                    <li>BK liquor Bridgeland</li>
+                    <li>Forest Lawn Co-op</li>
+                    <li>The Beer Vault</li>
+                    </ul>
+        </div>
+            
+        <div class="div_content">
+            <h4>SW</h4>
+            
+                    <ul>
+                    <li>Vine Arts</li>
+                    <li>Dominion Bottle shop</li>
+                    <li>5Vines</li>
+                    <li>Willow Park Wine and Spirits</li>
+                    <li>All Calgary Co-op Locations</li>
+                    <li>Crowfoot Wine and Spirits Altadore</li>
+                    <li>The Cellar Wine Store</li>
+                    <li>Vine Styles: Design District</li>
+                    <li>Highlander Liquor Seton</li>
+                    <li>Oak and Vine Inglewood</li>
+                    <li>Heritage Wine and Spirits</li>
+                    <li>Britannia Wine Merchants</li>
+                    <li>Bin 905</li>
+                    <li>J Webb <em>(17th ave)</em></li>
+                    <li>J Webb <em>(Glenmore Landing)</em></li>
+                    <li>Altadore Liquor Depot</li>
+                    </ul>
+        </div>
+            
+        <div class="div_content">
+            <h4>SE</h4>
+            
+                    <ul>
+                    <li>Zyn Inglewood</li>
+                    <li>Sundance Wine Market</li>
+                    <li>Oak and Vine Inglewood</li>
+                    <li>Cork Fine Wines</li>
+                    <li>J Webb <em>(Calgary Farmer’s Market)</em></li>
+                    <li>BK Liquor</li>
+                    <li>Liquor Depot Midlake</li>
+                    <li>The Brewer's Apprentice </li>
+                    </ul>
+        </div>
+        </div>
+            
+                <div class="columns">
+        <div class="div_content">
+            
+            <h3>On Tap</h3>
+            
+                <ul>
+                <li>The Dean House</li>
+                <li>National 17th Ave</li>
+                <li>National 10th Ave</li>
+                <li>National 8th Ave</li>
+                <li>Charbar</li>
+                <li>Broken City</li>
+                <li>Craft Beer Market</li>
+                <li>Hayden Block</li>
+                <li>Bo's <em>(Red Deer)</em></li>
+                <li>Craft <em>(Edmonton)</em></li> 
+                <li>The Commons <em>(Edmonton-Rotating)</em></li>
+                <li>Arcadia <em>( Edmonton-Rotating)</em></li> 
+                <li>Cilantro and Chive <i>(Lacombe-Rotating)</i></li>
+                </ul>
+        </div>
+            
+        <div class="div_content">
+            <h3>Restaurants/Bars with bottles:</h3>
+            
+                    <ul>
+                    <li>Rodney’s Oyster Bar</li>
+                    <li>Cannibale</li>
+                    <li>Pizza Bobs <em>(Kensington)</em></li>
+                    <li>Shiki Menya <em>(Bridgeland)</em></li>
+                    <li>Smuggler’s Inn</li>
+                    <li>Charcut Roast H</li>
+                    <li>Proof Cocktail Bar</li>
+                    <li>Bo's <em>(Red Deer)</em></li>
+                    <li>Cilantro and Chive <em>(Lacombe)</em></li>
+                    </ul>
+            <p><br>
+            </p>
+        </div>
+                
+        </div>
+                        
+        </div>
+            
+        </section>
+        
+        <section>
+            
+            <h2 id="5" onclick="showNhide('beer5', 'hiddenContent5', 'hiddenContent5B')"><span  id="beer5" class="fas fa-beer"></span> Artist in Residence</h2>
+            
+            <div id="hiddenContent5B" class="hiddenContent" style="display: none">
+            </div>
+            
+            <div id="hiddenContent5" class="hiddenContent" style="display: none">
+    
+            <h3>The Program</h3>
+            
+                <p>The Dandy Brewing Company Artist in Residency is a program aimed at visual artists in Alberta. </p>
+                <p>Dandy has long valued the visual arts and this program is designed to support those who make the Alberta scene so exciting. </p>
+                <p>The program provides a small stipend every month, for 6 months. Throughout the 6 months Artists are also encouraged to collaborate with the Dandies on events and projects!</p>
+        
+            <h3>Current Artist</h3>
+            
+                <p><strong><a href="http://jacquelinehuskisson.com" title="Jacqueline's Huskisson web site">Jacqueline Huskisson</a></strong></p>
+        
+            <h3>Past Artists</h3>
+            
+                <p><strong><a href="http://chrispecora.com" title="Chris' Pecora web site">Chris Pecora</a> <em>(Calgary, AB)</em></strong><br>
+                May-October 2017</p>
+                <p>Bio (courtesy of website):</p>
+                <p>Originally from a sleepy mountain town, I now run my graphic design and illustration studio from Calgary, Canada. My focus is creating thoughtful, memorable work for brands, publications, and agencies across North America. (And other places, too!)</p>
+        
+                <p><strong>Kelsey Fraser <em>(Calgary, AB)</em></strong><br>
+                November 2016-April 2017</p>
+            </div>
+        </section>
+
+        <section>
+            
+            <h2 id="6" onclick="showNhide('beer6', 'hiddenContent6', 'hiddenContent6B')"><span  id="beer6" class="fas fa-beer"></span> Story</h2>
+            
+            <div class="hiddenContent" style="display: block"><p><em>Even dandies have origins.</em></p></div>
+            
+            <div id="hiddenContent6B" class="hiddenContent" style="display: none">
+            </div>
+            
+            <div id="hiddenContent6" class="hiddenContent" style="display: none"> 
+                
+            
+    
+            
+            <h3>Chef. Chemist. Teacher. Business.</h3>
+            <div class="columns">
+                <p>The story goes back. Two high-school classmates begin a business, they graduated and went their separate ways. They cross paths again years later to discuss an interest, and a passion.</p>
+                <p>In the fall of 2013, the Alberta Gaming and Liquor Commission made sweeping changes to the brewing industry in Alberta, allowing small craft breweries to exist. It came at a perfect time. For years Ben Leon, a teacher, and Dylan Nosal, a chef, had been growing their home-brew experience, not only in size but also in knowledge. Over the course of a few years of practice, learning, and many batches, they began brewing exceptional beers on a home-built 1BBL brewhouse.</p>
+                <p>While honing skills, the two were developing a keen taste for the growing selection of Craft beer flooding into Alberta. Much of their guidance came from Matt Gaetz, a veteran of the liquor business in Alberta, and a close friend. Between the three of them, the topic of starting something amazing often came up over beers and brewing. They knew they wanted it, they just weren't sure it was possible under old laws. Changes in law meant it was possible.</p>
+            </div>
+            
+            <div class="row_pics">
+            <img src="images/Fermenter%20pic.jpg" alt="Fermenter">
+            
+            <img src="images/DSC_0373.jpg" alt="bottles">
+                
+            <img src="images/DSC_0385.jpg" alt="production line">
+                            
+            <img src="images/can%20foam%20pic.jpg" alt="beers' cans">
+            
+            
+            
+            
+            </div>
+            
+            <div class="columns">
+                <p>Discussion after discussion, batch after batch, ideas developed into plans. What it always boiled down to was that the brewery would have to be exciting, forward thinking, and outside the traditional thought box for breweries in the province. Exciting beer styles, quality ingredients, and attention to every detail of production.</p>
+                <p>Cue the return of Derek Waghray, a high-school friend studying chemistry on the West coast. On his return to Calgary, and with a new-found interest in brewing and craft beer, he got in touch with an old high school friend. A home brew batch later, and a discussion of wild dreams, he was added to the group. He was a much needed addition bringing expertise in laboratory process and a deep understanding of the science behind the beer.</p> 
+                <p>When the laws were officially changed in December 2013, the four Dandies moved quickly to hammer out the final details for The Dandy Brewing Company.</p>
+                <p>In January 2014 the Dandy Brewing Company was incorporated. April 2014 the lease was signed. June 2014 the brewhouse was built. August 2014 the brewing began. September 2014 the beer hit the shelves. April 2015 the first draught accounts started pouring. November 2015 the Tap Room opened. January 2016 a three-fold expansion of capacity was completed.</p>
+                <p>April 2018 saw the opening of the The Dandy Brewing Company and Tasting Room, a new production facility and full service tasting room located in the heart of Ramsay, Calgary. Fine Dining drinking food. Dandy beers. Cocktails. wine. The full Dandy experience.</p>
+                <p><strong>This story is just beginning.</strong></p>
+            </div>
+            
+                
+            </div>
+                
+                
+        </section>
+            
+        <section>
+            
+            <h2 id="7" onclick="showNhide('beer7', 'hiddenContent7', 'hiddenContent7B')"><span  id="beer7" class="fas fa-beer"></span> Contact Us</h2>
+            
+            <div id="hiddenContent7B" class="hiddenContent" style="display: block">
+                <p><em>Questions. Comments. Concerns.</em></p>   
+            </div>
+            
+            <div id="hiddenContent7" class="hiddenContent" style="display: none">
+                
+            <h3>The Dandy Brewing Company</h3>
+            
+                <p>2003 11th Street SE,<br> Calgary, AB.</p>
+                <p><em><sup><strong>&ast;</strong></sup> Please note, at this time, due to our limited space, we do not take reservations, nor do we book private tours in the tasting room.</em></p>
+                            
+            </div>
+        </section>
+       </div> 
+  </article>
+        
+    <footer id="footer" class="full-width">
+        <div class="wrap">
+        
+          
+        
+                <p>The Dandy Brewing Company and tasting room: 2003 11 Street SE, Calgary, AB, T2G 3G6, Canada</p>
+                <p><em>Photos by Arif Ansari and Chris Wideman</em></p>
+        
+            <div id="footer_link">
+                <p><a href="https://twitter.com/DandyAlesYYC" title="DandyAlesYYC"><i class="fab fa-twitter-square"></i></a>&nbsp;&nbsp;
+                <a href="https://www.facebook.com/dandyalesyyc" title="dandyalesyyc"><i class="fab fa-facebook-square"></i></a>&nbsp;&nbsp;
+                <a href="https://www.instagram.com/dandyalesyyc" title="dandyalesyyc"><i class="fab fa-instagram"></i> </a></p>
+            </div>
+        </div>
+    </footer>
+        
+</main>
+
+</body>
+</html>
