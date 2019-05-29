@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Dream Car Finder</string>
+    <string name="action_settings">Settings</string>
+    <string name="image_description">icon of a car</string>
+    <string name="car_year_make_model_placeholder">YEAR Make MODEL</string>
+    <string name="price_placeholder">CAD $XXX.XX</string>
+    <string name="vehicle_location_placeholder">Vehicle location</string>
+
+    <string name="title_activity_greeting">Greeting</string>
+    <string name="title_activity_car_location">Map</string>
+    <string name="search_hint">Search your dream car here...</string>
+    <string name="app_label">Dream Car Finder</string>
+    <string name="description_placeholder">This is car description</string>
+    <string name="browser_button_text">Get more info about the car</string>
+    <string name="search_header">Search your dream car here:</string>
+    <string name="make_hint">Make</string>
+    <string name="model_hint">Model</string>
+    <string name="year_hint">Year</string>
+
+    <string name="price_from_hint">Price From</string>
+    <string name="price_to_hint">Price To</string>
+    <string name="search_button_text">Search</string>
+</resources>

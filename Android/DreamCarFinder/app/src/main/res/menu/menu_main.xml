@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.dreamcarfinder.MainActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        android:title="Search"/>
+
+    <item
+        android:id="@+id/go_to_favourites"
+        android:icon="@drawable/ic_favourites"
+        app:showAsAction="always"
+        android:title="Favourites"/>
+
+</menu>

@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="image_width_main_layout">150dp</dimen>
+    <dimen name="car_year_make_model_padding_main_layout">4dp</dimen>
+    <dimen name="price_left_padding_main_layout">4dp</dimen>
+    <dimen name="location_padding_main_layout">4dp</dimen>
+</resources>

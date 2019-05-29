@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavouritesDescription">
+
+    <ImageView
+        android:id="@+id/carImageDetailF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/image_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/priceDetailF"
+        style="@style/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/price_placeholder"
+        app:layout_constraintStart_toEndOf="@+id/textView5F"
+        app:layout_constraintTop_toBottomOf="@+id/carImageDetailF" />
+
+
+    <TextView
+        android:id="@+id/locationDetailF"
+        style="@style/location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="12dp"
+
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="goToCarLocation"
+        android:clickable="true"
+        android:text="@string/vehicle_location_placeholder"
+        app:layout_constraintEnd_toStartOf="@+id/likeButtonF"
+        app:layout_constraintStart_toEndOf="@+id/textView6F"
+        app:layout_constraintTop_toBottomOf="@+id/textView5F"/>
+
+
+    <TextView
+        android:id="@+id/descriptionDetailF"
+        style="@style/description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginRight="8dp"
+
+        android:scrollbars="vertical"
+        android:text="@string/description_placeholder"
+        app:layout_constraintBottom_toTopOf="@+id/btnGoToBrowserF"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationDetailF" />
+
+    <Button
+        android:id="@+id/btnGoToBrowserF"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/browser_button_text"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="redirectToBrowserF"
+        android:backgroundTint="@android:color/holo_orange_light"/>
+
+    <ImageView
+        android:id="@+id/likeButtonF"
+        android:layout_width="41dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="dislike"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/descriptionDetailF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carImageDetailF"
+        app:srcCompat="@drawable/ic_like"
+        android:contentDescription="TODO"/>
+
+    <TextView
+        android:id="@+id/textView5F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Price: USD $"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carImageDetailF" />
+
+    <TextView
+        android:id="@+id/textView6F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Location: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5F" />
+
+</android.support.constraint.ConstraintLayout>
